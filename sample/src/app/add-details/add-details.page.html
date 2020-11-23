@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="secondary">
+      <ion-button fill="solid">
+        <ion-icon slot="start" name="person-circle"></ion-icon>
+        Contact
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Add Me</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button fill="solid" color="secondary">
+        Help
+        <ion-icon slot="end" name="help-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="4" offset-md="4">
+        <div class="container">
+
+          <hr>
+
+          <label><b>First Name</b></label>
+          <input [(ngModel)]="student.fname"  type="text" placeholder="Enter First Name" id="fname" required>
+          <!--div>{{name1}}</div-->
+          <label><b>Last Name</b></label>
+          <input [(ngModel)]="student.lname" type="text" placeholder="Enter Last Name" id="lname" required>
+
+          <label for="email" ><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required [(ngModel)]="student.email">
+
+          <label><b>Mobile Number</b></label>
+
+          <input type="text" placeholder="Enter Mobile Number" id="mnum" required [(ngModel)]="student.mnum"> 
+        
+
+          <label><b>Gender</b></label>
+
+          <ion-list>
+
+            <ion-radio-group value="state" [(ngModel)]="student.gender" >
+
+              <ion-item>
+                <ion-label>Male</ion-label>
+                <ion-radio slot="start" value="Male" color=dark border-radius=66px></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>Female</ion-label>
+                <ion-radio slot="start" value="Female" color=success></ion-radio>
+              </ion-item>
+                               
+              <ion-item>
+                <ion-label>Other</ion-label>
+                <ion-radio slot="start" value="Other" color=primary ></ion-radio>
+              </ion-item>
+          
+            </ion-radio-group>
+          </ion-list> 
+
+          <!--ion-item>
+            <ion-label><b>Male</b></ion-label>
+            <ion-radio value="m"></ion-radio>
+
+            <ion-label><b>Female</b></ion-label>
+            <ion-radio value="f"></ion-radio>
+
+            <ion-label><b>Other</b></ion-label>
+            <ion-radio value="o"></ion-radio>
+          </ion-item-->
+
+          <!--p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p-->
+          <button type="submit" class="sub" (click)="sub()">Submit</button>
+        </div>
+
+
+     </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+
+  </ion-toolbar>
+</ion-footer>

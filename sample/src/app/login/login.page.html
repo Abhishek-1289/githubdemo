@@ -1,9 +1,54 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+
+  <ion-fab vertical="top" horizontal="end" size="small">
+    <ion-fab-button color="success">
+      <ion-icon name="close"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <br>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+
+        <h1 class="ion-text-center">Welcome back!</h1>
+
+        <h3 class="a">Don't have a account yet?</h3>
+
+        <h3 class="a">Login using your social page access by clicking one of the buttons below.</h3>
+        
+     
+          <ion-button color="danger"> <ion-icon name="logo-google" slot="start"></ion-icon> Sign in</ion-button>
+
+          <ion-button color="primary"> <ion-icon name="logo-facebook" slot="start"></ion-icon> Sign in</ion-button>
+
+          <ion-button color="success"> <ion-icon name="logo-linkedin" slot="start"></ion-icon> Sign in</ion-button>
+        
+      
+          <p class="a"> Or,User your email and password. </p>
+        
+        <ion-item>
+          <ion-label position="stacked">Email Adress</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Password</ion-label>
+          <ion-icon slot="end" name="eye-off-sharp"></ion-icon>
+          <ion-input type="password"> </ion-input>
+        </ion-item>
+        <div class="ion-padding">
+          <ion-checkbox color="success"></ion-checkbox>
+          <ion-label class="ion-padding">Remeber me</ion-label>
+        </div>
+        <div>
+          <ion-button color="success" expand="full">Sign in</ion-button>
+        </div>
+        <div>
+          <p class="ion-text-center" color="warning"> <a href="#">Forgot your password?</a></p>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
